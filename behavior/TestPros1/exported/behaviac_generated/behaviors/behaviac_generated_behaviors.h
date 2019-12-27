@@ -579,7 +579,7 @@ namespace behaviac
 		BEHAVIAC_DECLARE_DYNAMIC_TYPE(Action_bt_Struct_node19, Action);
 		Action_bt_Struct_node19()
 		{
-			method_p0 = (char*)("dee");
+			method_p0 = (char*)("deeswsssd");
 		}
 	protected:
 		virtual EBTStatus update_impl(Agent* pAgent, EBTStatus childStatus)
