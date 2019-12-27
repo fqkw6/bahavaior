@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<!--Source File: SecondBT.xml-->
+<behavior name="SecondBT" agenttype="FisrtAgent" version="5">
+  <node class="Sequence" id="0">
+    <node class="Assignment" id="1">
+      <property CastRight="false" />
+      <property Opl="int SecondAgentInstance.SecondAgent::p3" />
+      <property Opr="const int 8" />
+    </node>
+    <node class="Assignment" id="3">
+      <property CastRight="false" />
+      <property Opl="int Self.FisrtAgent::P2" />
+      <property Opr="const int 5" />
+    </node>
+    <node class="Action" id="5">
+      <property Method="Self.FisrtAgent::m1(&quot;&quot;)" />
+      <property ResultOption="BT_SUCCESS" />
+    </node>
+    <node class="Condition" id="2">
+      <property Operator="Greater" />
+      <property Opl="int SecondAgentInstance.SecondAgent::p3" />
+      <property Opr="int Self.FisrtAgent::P2" />
+    </node>
+    <node class="Action" id="4">
+      <property Method="Self.FisrtAgent::SayHello(&quot;eeee&quot;)" />
+      <property ResultOption="BT_SUCCESS" />
+    </node>
+  </node>
+</behavior>

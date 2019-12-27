@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<!--Source File: sub.xml-->
+<behavior name="sub" agenttype="FisrtAgent" version="5">
+  <node class="Sequence" id="0">
+    <attachment class="Event" id="2" flag="event">
+      <property ReferenceFilename="main" />
+      <property Task="Self.FisrtAgent::event_task(0)" />
+      <property TriggeredOnce="false" />
+      <property TriggerMode="Transfer" />
+    </attachment>
+    <node class="Action" id="1">
+      <property Method="Self.FisrtAgent::SayHello(&quot;ddddasdad&quot;)" />
+      <property ResultOption="BT_RUNNING" />
+    </node>
+    <node class="Assignment" id="4">
+      <property CastRight="false" />
+      <property Opl="int Self.FisrtAgent::P2" />
+      <property Opr="const int 1" />
+    </node>
+    <node class="Condition" id="5">
+      <property Operator="Equal" />
+      <property Opl="int Self.FisrtAgent::P2" />
+      <property Opr="const int 1" />
+    </node>
+    <node class="Action" id="3">
+      <property Method="Self.FisrtAgent::SayHello(&quot;222222&quot;)" />
+      <property ResultOption="BT_SUCCESS" />
+    </node>
+  </node>
+</behavior>

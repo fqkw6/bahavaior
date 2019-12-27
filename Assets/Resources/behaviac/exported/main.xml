@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<!--Source File: main.xml-->
+<behavior name="main" agenttype="FisrtAgent" version="5">
+  <pars>
+    <par name="_$local_task_param_$_0" type="int" value="0" />
+  </pars>
+  <node class="Task" id="0">
+    <property Prototype="Self.FisrtAgent::event_task(0)" />
+    <property IsHTN="false" />
+    <node class="Sequence" id="1">
+      <node class="Condition" id="3">
+        <property Operator="Equal" />
+        <property Opl="int Self.FisrtAgent::_$local_task_param_$_0" />
+        <property Opr="const int 2" />
+      </node>
+      <node class="Action" id="2">
+        <property Method="Self.FisrtAgent::SayHello(&quot;wwww&quot;)" />
+        <property ResultOption="BT_SUCCESS" />
+      </node>
+    </node>
+  </node>
+</behavior>

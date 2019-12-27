@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<!--Source File: Struct.xml-->
+<behavior name="Struct" agenttype="FisrtAgent" version="5">
+  <node class="Sequence" id="20">
+    <node class="Sequence" id="0">
+      <node class="Action" id="19">
+        <property Method="Self.FisrtAgent::SayHello(&quot;dee&quot;)" />
+        <property ResultOption="BT_SUCCESS" />
+      </node>
+      <node class="Assignment" id="1">
+        <property CastRight="false" />
+        <property Opl="FirstStruct Self.FisrtAgent::pp3" />
+        <property Opr="const FirstStruct {s1=4;s2=5;}" />
+      </node>
+      <node class="Condition" id="2">
+        <property Operator="Equal" />
+        <property Opl="FirstStruct Self.FisrtAgent::pp3" />
+        <property Opr="const FirstStruct {s1=4;s2=5;}" />
+      </node>
+      <node class="Assignment" id="5">
+        <property CastRight="false" />
+        <property Opl="FirstEnum Self.FisrtAgent::type" />
+        <property Opr="const FirstEnum e2" />
+      </node>
+      <node class="Sequence" id="7">
+        <node class="Parallel" id="6">
+          <property ChildFinishPolicy="CHILDFINISH_LOOP" />
+          <property ExitPolicy="EXIT_ABORT_RUNNINGSIBLINGS" />
+          <property FailurePolicy="FAIL_ON_ONE" />
+          <property SuccessPolicy="SUCCEED_ON_ALL" />
+          <node class="Condition" id="4">
+            <property Operator="Equal" />
+            <property Opl="FirstEnum Self.FisrtAgent::type" />
+            <property Opr="const FirstEnum e2" />
+          </node>
+          <node class="Action" id="3">
+            <property Method="Self.FisrtAgent::SayHello(&quot;wwewewe&quot;)" />
+            <property ResultOption="BT_SUCCESS" />
+          </node>
+        </node>
+        <node class="SequenceStochastic" id="8">
+          <node class="Action" id="9">
+            <property Method="Self.FisrtAgent::SayHello(&quot;C&quot;)" />
+            <property ResultOption="BT_SUCCESS" />
+          </node>
+          <node class="Action" id="10">
+            <property Method="Self.FisrtAgent::SayHello(&quot;B&quot;)" />
+            <property ResultOption="BT_SUCCESS" />
+          </node>
+          <node class="Action" id="11">
+            <property Method="Self.FisrtAgent::SayHello(&quot;A&quot;)" />
+            <property ResultOption="BT_SUCCESS" />
+          </node>
+        </node>
+        <node class="SelectorProbability" id="12">
+          <node class="DecoratorWeight" id="13">
+            <property DecorateWhenChildEnds="false" />
+            <property Weight="const int 40" />
+            <node class="Selector" id="14">
+              <node class="Action" id="17">
+                <property Method="Self.FisrtAgent::SayHello(&quot;40&quot;)" />
+                <property ResultOption="BT_SUCCESS" />
+              </node>
+            </node>
+          </node>
+          <node class="DecoratorWeight" id="15">
+            <property DecorateWhenChildEnds="false" />
+            <property Weight="const int 50" />
+            <node class="Selector" id="16">
+              <node class="Action" id="18">
+                <property Method="Self.FisrtAgent::SayHello(&quot;50&quot;)" />
+                <property ResultOption="BT_SUCCESS" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node class="Action" id="21">
+      <property Method="Self.FisrtAgent::SayHello(&quot;sasdsad&quot;)" />
+      <property ResultOption="BT_SUCCESS" />
+    </node>
+  </node>
+</behavior>
