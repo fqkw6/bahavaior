@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<workspace name="FisttBaha" folder="behaviors" export="..\..\ProWork\behavaior\Assets\Resources\behaviac\exported" language="cs" version="3">
+  <export>
+    <cpp>
+      <isexported>True</isexported>
+      <exportfilecount>1</exportfilecount>
+      <folder>../exported</folder>
+    </cpp>
+    <xml>
+      <isexported>True</isexported>
+    </xml>
+    <cs>
+      <isexported>False</isexported>
+      <exportfilecount>1</exportfilecount>
+      <folder>../../../ProWork/behavaior/Assets/Scripts/behaviac</folder>
+    </cs>
+  </export>
+</workspace>
